@@ -10,7 +10,6 @@ import { SidenavListComponent } from './shared/components/navigation/sidenav-lis
 import { MostRecentRowComponent } from './shared/components/most-recent-row/most-recent-row.component';
 import { MatCardModule } from '@angular/material/card';
 import { DashboardComponent } from './dashboard/dashboard.component';
-<<<<<<< HEAD
 import { FullGalleryComponent } from './shared/full-gallery/full-gallery.component';
 import { HallOfFameComponent } from './hall-of-fame/hall-of-fame.component';
 import { HallOfShameComponent } from './hall-of-shame/hall-of-shame.component';
@@ -18,8 +17,6 @@ import { LoginComponent } from './login/login.component';
 import { ViewDetailsComponent } from './shared/components/modal/view-details/view-details.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LogoutComponent } from './shared/components/logout/logout.component';
-=======
->>>>>>> develop
 
 
 @NgModule({
@@ -29,7 +26,6 @@ import { LogoutComponent } from './shared/components/logout/logout.component';
     LayoutComponent,
     SidenavListComponent,
     MostRecentRowComponent,
-<<<<<<< HEAD
     DashboardComponent,
     FullGalleryComponent,
     HallOfFameComponent,
@@ -37,9 +33,6 @@ import { LogoutComponent } from './shared/components/logout/logout.component';
     LoginComponent,
     ViewDetailsComponent,
     LogoutComponent
-=======
-    DashboardComponent
->>>>>>> develop
   ],
   imports: [
     BrowserModule,
