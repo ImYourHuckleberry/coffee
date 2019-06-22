@@ -3,13 +3,23 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MatButtonModule, MatCheckboxModule, MatSidenavModule, MatTabsModule, MatToolbarModule, MatIconModule, MatListModule, MatMenuModule } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatSidenavModule, MatTabsModule, MatToolbarModule, MatIconModule, MatListModule, MatMenuModule, MatFormFieldModule, MatInputModule, MatDialog, MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS, MatDialogClose, MatDialogConfig } from '@angular/material';
 import { HeaderComponent } from './shared/components/navigation/header/header.component';
 import { LayoutComponent } from './shared/components/layout/layout.component';
 import { SidenavListComponent } from './shared/components/navigation/sidenav-list/sidenav-list.component';
 import { MostRecentRowComponent } from './shared/components/most-recent-row/most-recent-row.component';
 import { MatCardModule } from '@angular/material/card';
 import { DashboardComponent } from './dashboard/dashboard.component';
+<<<<<<< HEAD
+import { FullGalleryComponent } from './shared/full-gallery/full-gallery.component';
+import { HallOfFameComponent } from './hall-of-fame/hall-of-fame.component';
+import { HallOfShameComponent } from './hall-of-shame/hall-of-shame.component';
+import { LoginComponent } from './login/login.component';
+import { ViewDetailsComponent } from './shared/components/modal/view-details/view-details.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LogoutComponent } from './shared/components/logout/logout.component';
+=======
+>>>>>>> develop
 
 
 @NgModule({
@@ -19,7 +29,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LayoutComponent,
     SidenavListComponent,
     MostRecentRowComponent,
+<<<<<<< HEAD
+    DashboardComponent,
+    FullGalleryComponent,
+    HallOfFameComponent,
+    HallOfShameComponent,
+    LoginComponent,
+    ViewDetailsComponent,
+    LogoutComponent
+=======
     DashboardComponent
+>>>>>>> develop
   ],
   imports: [
     BrowserModule,
@@ -32,9 +52,18 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatIconModule,
     MatListModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    { provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: { hasBackdrop: true } },
+    MatDialog,
+    MatDialogConfig
+  ],
   exports: [
     MatTabsModule,
     MatSidenavModule,
@@ -43,7 +72,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatButtonModule,
     MatListModule,
     MatMenuModule,
-    MostRecentRowComponent
+    MostRecentRowComponent,
+    MatFormFieldModule,
+    MatInputModule
+  ],
+  entryComponents: [
+    ViewDetailsComponent
   ],
   bootstrap: [AppComponent]
 })

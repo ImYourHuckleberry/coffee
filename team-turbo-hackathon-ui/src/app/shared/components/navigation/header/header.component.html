@@ -5,16 +5,28 @@
     </button>
   </div>
   <div>
-    <a mat-button routerLink="/home" fxShow="true" fxHide.lt-md
-      >Owner-Account</a
-    >
+    <a mat-button routerLink="/home" fxShow="true" fxHide.lt-md>Coffee Shame</a>
   </div>
   <div>
-    <a mat-button routerLink="/shame" fxShow="true" fxHide.lt-md
-      >Hall of Shame</a
-    >
+    <a mat-button routerLink="/shame" fxShow="true" fxHide.lt-md>Hall of Shame</a>
   </div>
   <div>
     <a mat-button routerLink="/fame" fxShow="true" fxHide.lt-md>Hall of Fame</a>
+  </div>
+  <span class="space">
+
+  </span>
+  <div>
+    <button mat-button [matMenuTriggerFor]="menu" fxShow="true" fxHide.lt-md>
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/login">
+        Login
+      </button>
+      <button mat-menu-item routerLink="/logout">
+        Logout
+      </button>
+    </mat-menu>
   </div>
 </mat-toolbar>
