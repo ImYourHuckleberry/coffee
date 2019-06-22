@@ -4,18 +4,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { MostRecentRowComponent } from './shared/components/most-recent-row/most-recent-row.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MostRecentRowComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatCardModule
+  ],
+  exports: [
+    MostRecentRowComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
