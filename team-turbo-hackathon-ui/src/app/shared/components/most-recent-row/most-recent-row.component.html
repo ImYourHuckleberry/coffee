@@ -1,23 +1,25 @@
-<mat-card>
-  <mat-card-header>Section Title</mat-card-header>
-  <div class="container">
-    <div class="" *ngFor="let dude of dudes">
-      <mat-card class="person-card recent-flex-item-0">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>{{dude.firstname}} {{dude.lastname}}</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        <!-- <mat-card-content>
+<div class="container">
+  <div class="" *ngFor="let dude of dudes">
+    <mat-card class="person-card recent-flex-item-0">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title
+          >{{ dude.firstname }} {{ dude.lastname }}</mat-card-title
+        >
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Photo of a Shiba Inu"
+      />
+      <!-- <mat-card-content>
 
             </mat-card-content> -->
-        <mat-card-actions>
-          <button mat-button><i class="fas fa-arrow-up"></i></button>
-          <button mat-button><i class="fas fa-arrow-down"></i></button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-
+      <mat-card-actions>
+        <button mat-button><i class="fas fa-arrow-up"></i></button>
+        <button mat-button><i class="fas fa-arrow-down"></i></button>
+      </mat-card-actions>
+    </mat-card>
   </div>
-</mat-card>
+</div>
