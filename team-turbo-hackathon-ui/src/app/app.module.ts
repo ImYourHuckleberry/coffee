@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatSidenavModule, MatTabsModule, MatToolbarModule, MatIconModule, MatListModule, MatMenuModule } from '@angular/material';
+import { HeaderComponent } from './shared/components/navigation/header/header.component';
+import { LayoutComponent } from './shared/components/layout/layout.component';
+import { SidenavListComponent } from './shared/components/navigation/sidenav-list/sidenav-list.component';
 import { MostRecentRowComponent } from './shared/components/most-recent-row/most-recent-row.component';
 import { MatCardModule } from '@angular/material/card';
 
@@ -11,6 +14,9 @@ import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    LayoutComponent,
+    SidenavListComponent,
     MostRecentRowComponent
   ],
   imports: [
@@ -19,12 +25,24 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    MatMenuModule,
     MatCardModule
   ],
+  providers: [],
   exports: [
+    MatTabsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatListModule,
+    MatMenuModule,
     MostRecentRowComponent
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
