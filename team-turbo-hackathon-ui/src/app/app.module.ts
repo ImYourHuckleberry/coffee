@@ -9,6 +9,7 @@ import { LayoutComponent } from './shared/components/layout/layout.component';
 import { SidenavListComponent } from './shared/components/navigation/sidenav-list/sidenav-list.component';
 import { MostRecentRowComponent } from './shared/components/most-recent-row/most-recent-row.component';
 import { MatCardModule } from '@angular/material/card';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MatCardModule } from '@angular/material/card';
     HeaderComponent,
     LayoutComponent,
     SidenavListComponent,
-    MostRecentRowComponent
+    MostRecentRowComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
