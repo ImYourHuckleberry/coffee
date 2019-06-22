@@ -1,0 +1,17 @@
+<div class="container">
+  <h2 class="header">Login</h2>
+  <form [formGroup]="newForm">
+    <mat-form-field class="f-field">
+      <input matInput placeholder="username" formControlName="username">
+    </mat-form-field>
+    <mat-form-field class="f-field">
+      <input matInput placeholder="password" formControlName="password">
+    </mat-form-field>
+  </form>
+
+  <button mat-flat-button color="primary" (click)="login()">
+    hi
+  </button>
+
+
+</div>
